@@ -32,3 +32,37 @@
 Resublity: আপনি ছোটবেলা থেকে প্রোগ্রামিং শিখেছেন। একদিন আপনার শিক্ষক বললেন আরে তুমি তো এই কোডটি বার বার না লিখে একটি ফাংশন বানাও। এই ফাংশন টি আপনি একবার লিখে দিলে আপনি এটি বার বার ব্যবহার করতে পারবেন। এই ফাংশন টি আপনি আপনার প্রজেক্টে বার বার ব্যবহার করতে পারবেন। এইভাবে আমাদের কোড কে রিইউজেবল করা যায়। এছাড়া আমরা যে ক্লাস বানাই তা আমরা ছোট ছোট করে তৈরি করি ফলে আমাদের যে নির্দিষ্ট সমস্যার সমাধান দেয়। ওইটা এক ধরনের মডিউলারিটি।
 
 আমরা যখন ইন্টারফেস নিয়ে করে কথা বলব । Reusability of code and The Reusability of the Design. Reusability of design কে বলা হয় Design Pattern। এই ডিজাইন প্যাটার্ন গুলো আমাদের কোড কে রিইউজেবল করে।  
+
+- Simple Design
+- Decoupleness
+- Testability
+- Readability
+- Debuggability
+- Less Technical Debt
+- Understanding Application Architecture
+- Apply Design Principle & Patterns
+- Deep Drive any Framework or Library
+
+### Practice Problem 1
+
+Practice 01: Working with Array/ArrayList/List
+
+Create a list of employee names and find out the partial matching with user input (hard coded value). Use your preferred programming language.
+
+Sample name list:
+Tareq
+Afsana
+Imtiaz
+Pulok
+Robin
+Samia
+Rupok
+
+Sample user input 1 : pulok
+Output: Pulok
+
+Sample user input 2: sa
+Output: Afsana, Samia
+
+Sample user input 3: n
+Output: Afsana, Robin
