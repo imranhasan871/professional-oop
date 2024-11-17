@@ -1,52 +1,22 @@
-# OOP For Professionals - Day 1
+# হিস্ট্রি অফ প্রোগ্রামিং ল্যাঙ্গুয়েজেসঃ
 
-Welcome to the first day of learning Object-Oriented Programming (OOP) for professionals. This guide will cover the basics and fundamental concepts of OOP.
+ **প্রথম জেনারেশন( ১৯৪০ - ১৯৫৯):**
 
-## Table of Contents
+- মেশিন ল্যাঙ্গুয়েজ, যেগুলো সরাসরি হার্ডওয়্যারের সাথে কাজ করতো।
 
-1. Introduction to OOP
-2. Key Concepts
-    - Classes and Objects
-    - Inheritance
-    - Encapsulation
-    - Polymorphism
-3. Setting Up Your Environment
-4. Writing Your First Class
-5. Practical Examples
+**দ্বিতীয় জেনারেশন( ১৯৫০ - ১৯৬০):**
 
-## 1. Introduction to OOP
+- অ্যাসেম্বলি ল্যাঙ্গুয়েজ, যেগুলো মেশিন ল্যাঙ্গুয়েজের উপর ভিত্তি করে তৈরি করা হয়েছিল। হার্ডওয়্যারের অপারেশনগুলো সহজ করার জন্য এই ল্যাঙ্গুয়েজগুলো ব্যবহৃত হতো।
 
-Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code to manipulate that data. OOP aims to implement real-world entities like inheritance, hiding, polymorphism, etc. in programming.
+**তৃতীয় জেনারেশন( ১৯৬০ - ১৯৭০):**
 
-## 2. Key Concepts
+- হাই-লেভেল প্রোগ্রামিং ভাষা, যেগুলো আরও একটু  abstraction নিয়ে এসেছিল অ্যাসেম্বলি ল্যাঙ্গুয়েজ থেকে। যেগুলো মূলত সাইন্টিফিক ক্যালকুলেশন এবং সিস্টেম প্রোগ্রামিং এর জন্য ব্যবহার হতো। এই জেনারেশনে প্রোগ্রামিং ভাষাগুলি তৈরি হয়েছিল যেমন ফোরট্রান(Fortran), কোবল(COBOL), প্ল/আসেম্বলি(PL/1), বেসিক(BASIC)।
 
-### Classes and Objects
+**চতুর্থ জেনারেশন( ১৯৮০ - ১৯৯০):**
 
-- **Class**: A blueprint for creating objects (a particular data structure).
-- **Object**: An instance of a class.
+- এই জেনারেশনে যে প্রোগ্রামিং ভাষাগুলি তৈরি হয়েছিল তা মুলত সমস্যা নির্ভর প্রোগ্রামিং এবং productivity বাড়াতে তৈরি করা হয়েছিল। এই জেনারেশনে প্রোগ্রামিং ভাষাগুলি তৈরি হয়েছিল যেমন SQL ইত্যাদি।
 
-### Inheritance
+**পঞ্চম জেনারেশন( ১৯৯০ - বর্তমান):**
 
-Inheritance is a mechanism where a new class inherits properties and behavior (methods) from an existing class.
-
-### Encapsulation
-
-Encapsulation is the bundling of data with the methods that operate on that data.
-
-### Polymorphism
-
-Polymorphism allows methods to do different things based on the object it is acting upon.
-
-## 3. Setting Up Your Environment
-
-Instructions on setting up your programming environment.
-
-## 4. Writing Your First Class
-
-A step-by-step guide to writing your first class in OOP.
-
-## 5. Practical Examples
-
-Examples to demonstrate the concepts learned.
-
-Stay tuned for more detailed explanations and hands-on exercises!
+এই জেনারেশনে প্রগ্রামিং ল্যাঙ্গুয়েজ শুরু হয়েছে C++ দিয়ে। এখান থেকে শুরু হয়েছে অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং। আস্তে আস্তে Java, C#, Python, PHP, Ruby, JavaScript
+ইত্যাদি প্রোগ্রামিং এ ওওপি ব্যবহার করা হতো।
