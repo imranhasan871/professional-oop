@@ -1,68 +1,18 @@
-# হিস্ট্রি অফ প্রোগ্রামিং ল্যাঙ্গুয়েজেসঃ
+# Day 1: Working with Array/ArrayList
 
- **প্রথম জেনারেশন( ১৯৪০ - ১৯৫৯):**
+## Problem Description
+Create a list of employee names and find out the partial matching with user input.
 
-- মেশিন ল্যাঙ্গুয়েজ, যেগুলো সরাসরি হার্ডওয়্যারের সাথে কাজ করতো।
+**Requirements:**
+- Hardcoded list of names.
+- Case-insensitive search.
+- User input "sa" should match "Afsana", "Samia".
 
-**দ্বিতীয় জেনারেশন( ১৯৫০ - ১৯৬০):**
+## Approach
+1.  **Data Structure**: Used a simple String array to store the names.
+2.  **Search Logic**: Iterated through the array using an enhanced `for` loop.
+3.  **String Matching**: Used `String.toLowerCase()` and `String.contains()` to find partial matches regardless of case.
+4.  **Output**: Printed matching names to the console.
 
-- অ্যাসেম্বলি ল্যাঙ্গুয়েজ, যেগুলো মেশিন ল্যাঙ্গুয়েজের উপর ভিত্তি করে তৈরি করা হয়েছিল। হার্ডওয়্যারের অপারেশনগুলো সহজ করার জন্য এই ল্যাঙ্গুয়েজগুলো ব্যবহৃত হতো।
-
-**তৃতীয় জেনারেশন( ১৯৬০ - ১৯৭০):**
-
-- হাই-লেভেল প্রোগ্রামিং ভাষা, যেগুলো আরও একটু  abstraction নিয়ে এসেছিল অ্যাসেম্বলি ল্যাঙ্গুয়েজ থেকে। যেগুলো মূলত সাইন্টিফিক ক্যালকুলেশন এবং সিস্টেম প্রোগ্রামিং এর জন্য ব্যবহার হতো। এই জেনারেশনে প্রোগ্রামিং ভাষাগুলি তৈরি হয়েছিল যেমন ফোরট্রান(Fortran), কোবল(COBOL), প্ল/আসেম্বলি(PL/1), বেসিক(BASIC)।
-
-**চতুর্থ জেনারেশন( ১৯৮০ - ১৯৯০):**
-
-- এই জেনারেশনে যে প্রোগ্রামিং ভাষাগুলি তৈরি হয়েছিল তা মুলত সমস্যা নির্ভর প্রোগ্রামিং এবং productivity বাড়াতে তৈরি করা হয়েছিল। এই জেনারেশনে প্রোগ্রামিং ভাষাগুলি তৈরি হয়েছিল যেমন SQL ইত্যাদি।
-
-**পঞ্চম জেনারেশন( ১৯৯০ - বর্তমান):**
-
-এই জেনারেশনে প্রগ্রামিং ল্যাঙ্গুয়েজ শুরু হয়েছে C++ দিয়ে। এখান থেকে শুরু হয়েছে অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং। আস্তে আস্তে Java, C#, Python, PHP, Ruby, JavaScript
-ইত্যাদি প্রোগ্রামিং এ ওওপি ব্যবহার করা হতো। এই প্রোগ্রামিং লাঙ্গুয়েজগুলোর মধ্যে দুই ধরনের হয়ে থাকে। একটি Strongly Typed এবং অপরটি Weakly Typed। কিছু কিছু মানুষ মনে করল আমি কেন টাইপ বলে দিবো। কম্পাইলার, বা রানটাইম নিজে থেকে ঠিক করে নিবে। আবার কিছু মানুষ মনে করল আচ্ছা আমি বলে দিচ্ছি। এখানে এই নিয়ে চিন্তার কোন কারন নেই। দুই ধরনের প্রোগ্রামিং ল্যাঙ্গুয়েজের ভাল খারাপ  দিক আছে। ব্যবহার বিধির উপর নির্ভর করে কোনটা ব্যবহার করবেন তা নির্ধারণ করতে হবে।
-
-## কেন ওওপি ব্যবহার করবেন?
-
-আমাদের এই যে এত এত ডিজিটাল উন্নয়ন হয়েছে তা সব কিছু এই পঞ্চম জেনারেশনের প্রোগ্রামিং ল্যাঙ্গুয়েজ এর মাধ্যমেই হয়েছে। এই প্রোগ্রামিং ল্যাঙ্গুয়েজ গুলো laboratory থেকে বের হয়ে আমাদের জনসাধারনের সমস্যা সমাধানের জন্য এগিয়ে এসেছে। এই জন্য এই ল্যাঙ্গুয়েজ গুলো সাপোর্ট করতো Modularity, Reusability, Change Management.
-
-সফটওয়ার ইঞ্জিনিয়ারদের ভয়ের একটি বড় কারণ হল চেঞ্জ ম্যানেজমেন্ট। এই প্রোগ্রামিং ল্যাঙ্গুয়েজগুলো আমাদের এই চেঞ্জ ম্যানেজমেন্ট এর সমস্যা সমাধানে সাহায্য করে। আমাদের কোডকে মডিউলার করে তুলে। এই মডিউলারিটি আমাদের কোড কে রিইউজেবল করে।
-
-এই চেঞ্জ বিভিন্ন জায়গা থেকে আসতে পারে। যেমন আপনার ক্লাইন্ট আপনার প্রোডাক্ট এ কিছু চেঞ্জ চাইল। আপনার সিনিওর ডেভেলপার আপনার কাছে থেকে চেঞ্জ চাইল। ম্যানেজমেন্ট আপনার কাছে থেকে চেঞ্জ চাইল। এই চেঞ্জ গুলো আমাদের কোড এ প্রভাব ফেলতে পারে। এই প্রভাব গুলো কম করার জন্য আমরা ওওপ ব্যবহার করি।
-
-Resublity: আপনি ছোটবেলা থেকে প্রোগ্রামিং শিখেছেন। একদিন আপনার শিক্ষক বললেন আরে তুমি তো এই কোডটি বার বার না লিখে একটি ফাংশন বানাও। এই ফাংশন টি আপনি একবার লিখে দিলে আপনি এটি বার বার ব্যবহার করতে পারবেন। এই ফাংশন টি আপনি আপনার প্রজেক্টে বার বার ব্যবহার করতে পারবেন। এইভাবে আমাদের কোড কে রিইউজেবল করা যায়। এছাড়া আমরা যে ক্লাস বানাই তা আমরা ছোট ছোট করে তৈরি করি ফলে আমাদের যে নির্দিষ্ট সমস্যার সমাধান দেয়। ওইটা এক ধরনের মডিউলারিটি।
-
-আমরা যখন ইন্টারফেস নিয়ে করে কথা বলব । Reusability of code and The Reusability of the Design. Reusability of design কে বলা হয় Design Pattern। এই ডিজাইন প্যাটার্ন গুলো আমাদের কোড কে রিইউজেবল করে।  
-
-- Simple Design
-- Decoupleness
-- Testability
-- Readability
-- Debuggability
-- Less Technical Debt
-- Understanding Application Architecture
-- Apply Design Principle & Patterns
-- Deep Drive any Framework or Library
-
-### Practice Problem 1
-
-Practice 01: Working with Array/ArrayList/List
-
-Create a list of employee names and find out the partial matching with user input (hard coded value). Use your preferred programming language.
-
-Sample name list:
-Tareq
-Afsana
-Imtiaz
-Pulok
-Robin
-Samia
-Rupok
-
-Sample user input 1 : pulok
-Output: Pulok
-
-Sample user input 2: sa
-Output: Afsana, Samia
-
-Sample user input 3: n
-Output: Afsana, Robin
+## Code Structure
+- `solution.java`: Contains the main method and the logic for the search.
