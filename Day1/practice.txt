@@ -1,0 +1,26 @@
+Practice 01: Working with Array/ArrayList/List
+Duration: 15 Min
+
+Create a list of employee names 
+and 
+find out the partial matching with user input (hard coded value).
+ShowResult
+ Use your preferred programming language.
+
+Sample name list: 
+Tareq
+Afsana 
+Imtiaz
+Pulok
+Robin
+Samia
+Rupok
+
+Sample user input 1: pulok
+Output: Pulok
+
+Sample user input 2: sa
+Output: Afsana, Samia
+
+Sample user input 3: n
+Output: Afsana, Robin
