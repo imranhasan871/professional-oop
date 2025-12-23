@@ -1,26 +1,26 @@
 package Day2;
 
-import java.util.Scanner;
+import java.util.List;
 
 public class solutions {
+
     public static void main(String[] args) {
-      // read file from csv file
-      Scanner scanner = new Scanner(System.in);
-      String fileName = "salarysheet.csv";
-      
-      try {
-        scanner.useDelimiter(",");
-        while (scanner.hasNext()) {
-          String name = scanner.next();
-          int salary = Integer.parseInt(scanner.next());
-          System.out.println(name + " " + salary);
-          
+        
+        String fileName = "salarysheet.csv";
+        
+        SalaryDataReader dataReader = new SalaryDataReader();
+        List<Employee> salaryList = dataReader.readDataFromCSVFile(fileName);
+
+        if (salaryList.isEmpty()) {
+            System.out.println("No data loaded.");
+            return;
         }
-      } catch (Exception e) {
-        System.out.println("File not found");
-      }
-      
-      scanner.close();
-  
+
+        SalaryAnalyzer analyzer = new SalaryAnalyzer();
+
+        Employee maxEmployee = analyzer.findMaxSalaryWithEmployeeName(salaryList);
+        if (maxEmployee != null) {
+            System.out.println("Max: " + maxEmployee.getName() + "\t" + maxEmployee.getSalary());
+        }
     }
 }
