@@ -1,0 +1,28 @@
+Practice 03: Generate a voucher
+
+You will develop a console application to read data from the groceryitems.csv file. This file contains item ID, quantity, and unit price in separate columns, as shown below:
+
+item-937    12    230.5
+item-432    3     120.0
+item-431    1     1230.0
+item-098    5     12.5
+item-133    8     30.0
+
+
+Your program should display a voucher in the following format. The voucher will include item ID, quantity, unit price, and total price for each item. Additionally, it will calculate and display the grand total, 5% VAT, and the net total. See the expected output format below. You will display the output on the console and also save it to a text file.
+
+Item id		Qty	unit price	total
+item-937	12	230.5		2766.0
+item-432	3	120.0		360.0
+item-431	1	1230.0		1230.0
+item-098	5	12.5		62.5
+item-133	8	30.0		240.0
+
+Total		29	Grand total 	4,658.5
+VAT (5%)	232.925
+Net total	4425.575	
+
+
+Please ensure that your program does not generate a voucher if there are any duplicate item IDs. In such cases, display an appropriate message to the user indicating which item IDs are duplicated so they can correct the issue.
+
+Note: Please download the groceryitems.csv file to your local computer first.
